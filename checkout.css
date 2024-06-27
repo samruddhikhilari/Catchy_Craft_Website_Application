@@ -1,0 +1,183 @@
+body {
+    font-family: 'Arial', sans-serif;
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:  #d2caca;
+   
+  }
+  
+  h1 {
+    font-size: 50px;
+  color: #f9f5f5;
+  border: 3px solid rgb(133, 237, 92);
+  margin-right: 34%;
+  margin-left: 34%;
+  background: radial-gradient(circle, #f1067c, #d506ec);
+  border-radius: 4%;
+    margin-left: 34%;
+    text-align:  center;
+  }
+  
+  form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #e5e0e0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    margin-left: 35%;
+  }
+  
+  button:hover {
+    background-color: #12070d;
+  }
+  /* styles.css */
+
+
+
+p {
+  color: #555;
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+/* Add any additional styling based on your design preferences */
+/* Styles for the modal */
+/* Styles for the modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  
+  background-color: rgba(66, 64, 64, 0.5);
+  animation: zoomOut 0.5s ease-out; /* Add zoom-out animation */
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  max-width: 400px;
+  text-align: center;
+  border-radius: 5px;
+}
+.modal-content  h1
+{
+  color: #12070d;
+  background: none;
+  border: none;
+  font-weight: 600;
+  font-size: 24px;
+ 
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Style for buttons in the modal */
+.okbutton{
+ color: #12070d;
+ margin-left: 4%;
+ padding:10px ;
+ 
+ box-sizing: border-box;
+ width: 20%;
+}
+.returnbutton{
+ color: #12070d;
+ margin-right: 4%;
+ padding:10px ;
+ box-sizing: border-box;
+ width: 35%;
+}
+
+button:hover {
+  background-color: #090909;
+  color: #e5e0e0;
+}
+@keyframes zoomOut {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@media only screen and (max-width: 768px) {
+  h1 {
+      font-size: 40px;
+      margin-right: 10%;
+      margin-left: 10%;
+  }
+
+  form {
+      max-width: 90%;
+      margin-left: 5%;
+      margin-right: 5%;
+  }
+
+  button {
+      margin-left: 10%;
+  }
+
+  .modal-content {
+      width: 80%;
+      margin: 20% auto;
+  }
+
+  .okbutton {
+      margin-left: 2%;
+      width: 40%;
+  }
+
+  .returnbutton {
+      margin-right: 2%;
+      width: 40%;
+  }
+}
+.img{
+  height: 3%;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    
+    <title>Profile Dropdown</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <img src="../logo/logo.jpg" class="navbar-logo" alt="logo" />
+      
+      <ul class="navbar-list">
+      <li><a href="#">Cachy Craft</a></li>
+      </ul>
+
+      <ul class="navbar-list">
+        <li><a href="../index_customer.php">Home</a></li>
+        <li><a href="about_page.html">About</a></li>
+        <li><a href="contact_us.html">Contact Us</a></li>
+      </ul> 
+
+      <div class="profile-dropdown">
+        <div onclick="toggle()" class="profile-dropdown-btn">
+          <div class="profile-img">
+            <i class="fa-solid fa-circle"></i>
+          </div>
+
+          <img src="../logo/favicon.jpg" class="navbar-logo" alt="logo" style="width: 40px;" />
+          <span>Profile
+            <i class="fa-solid fa-angle-down"></i>
+          </span>
+        </div>
+
+        <ul class="profile-dropdown-list">
+          <li class="profile-dropdown-list-item">
+            <a href="profile_dashboard.php">
+              <i class="fa-regular fa-user"></i>
+             <label for="" onclick="change">View Profile</label> 
+            </a>
+          </li>
+
+
+          <li class="profile-dropdown-list-item">
+            <a href="shopping_cart/products.php">
+              <i class="fa-regular fa-envelope"></i>
+
+              View Products         
+               </a>
+          </li>
+
+          <li class="profile-dropdown-list-item">
+            <a href="../wishlist.html">
+              <i class="fa-solid fa-heart"></i>
+              Wishlist
+            </a>
+          </li>
+
+          <li class="profile-dropdown-list-item">
+            <a href="#">
+              <i class="fa-regular fa-circle-question"></i>
+              Orders
+            </a>
+          </li>
+          <hr />
+
+          <li class="profile-dropdown-list-item">
+            <a href="../index.php">
+              <i class="fa-solid fa-arrow-right-from-bracket"></i>
+             <label for="" onclick="alert('Log out successfully ')">Log out</label> 
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section style="width: 1800px; height: 1800px; position:center;">
+      <iframe src="slideshow.php" frameborder="0" width="100%;" height="100%;"></iframe>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

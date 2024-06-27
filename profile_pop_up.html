@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" href="styles.css">
+	<script defer src="app.js"></script>
+	<link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+	<link href=
+"https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+		rel="stylesheet">
+	<title>GFG</title>
+	<style>
+	body {
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	background: linear-gradient(to right, #887deb, #ed2fe3);
+	font-family: 'Montserrat', sans-serif;
+	overflow: hidden;
+}
+.profile-card {
+	background-color: #fff;
+	border-radius: 10px;
+	overflow: hidden;
+	width: 300px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.profile-header {
+	padding: 20px;
+	text-align: center;
+	background: linear-gradient(to bottom, #c84e87, #8f94fb);
+	color: rgb(255, 255, 255);
+}
+.profile-picture img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin: 0 auto 10px;
+}
+.profile-name,
+.profile-designation,
+.profile-location {
+	margin: 0;
+}
+.profile-details {
+	padding: 20px;
+}
+.profile-details p {
+	margin: 10px 0;
+}
+.interactive-counter {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.interactive-counter button {
+	background-color: #4e54c8;
+	color: #fff;
+	border: none;
+	padding: 5px 10px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+.interactive-counter button:hover {
+	background-color: #8f94fb;
+}
+.social-links {
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+}
+.social-links a {
+	margin: 0 5px;
+	font-size: 1.5em;
+	text-decoration: none;
+}
+.social-links i {
+	transition: color 0.3s ease;
+}
+.social-links a:hover i {
+	color: #8f94fb;
+}
+.social-icon {
+	font-size: 3em;
+	transition: transform 0.3s ease;
+}
+.social-icon:hover {
+	transform: scale(1.2);
+}
+</style>
+</head>
+<body>
+	<div class="profile-card animate__animated animate__fadeIn" id="profileCard">
+		<div class="profile-header">
+			<div class="profile-picture">
+				<img src= "https://media.geeksforgeeks.6191453/gfglogo.png"
+						alt="User Image">
+			</div>
+			<h2 class="profile-name" style="color: rgb(23, 78, 189);">
+				Cachy Craft
+			</h2>
+			<p class="profile-designation">E-commerce</p>
+			<p class="profile-location">Aswari, India</p>
+		</div>
+		<div class="profile-details">
+			<div class="interactive-counter">
+				<p><strong>UserName:</strong> 
+					<span id="followersCount">
+						Name
+					</span>
+				</p>
+			</div>
+			<div class="interactive-counter">
+				<p><strong>Email:</strong> 
+					<span id="followingCount">
+						email id
+					</span>
+				</p>
+			</div>
+			<div class="interactive-counter">
+				<p><strong>Address:</strong> 
+					<span id="articlesCount">
+						address here : 
+					</span>
+				</p>
+			</div>
+			<div class="interactive-counter">
+				<p><strong>Contact No:</strong> 
+					<span id="articlesCount">
+						Phone no here  : 
+					</span>
+				</p>
+			</div>
+			<div class="interactive-counter">
+				<p><strong>City:</strong> 
+					<span id="articlesCount">
+						city : 
+					</span>
+				</p>
+			</div>
+			<div class="interactive-counter">
+				<p><strong>DOB:</strong> 
+					<span id="articlesCount">
+						Date Of Birth : 
+					</span>
+				</p>
+			</div>
+		</div>
+		<div class="social-links">
+			<a href= "#" target="_blank"
+			class="social-icon">
+				<i class="fab fa-facebook" style="color: #1877f2;"></i></a>
+			<a href= "#"
+			target="_blank" class="social-icon">
+				<i class="fab fa-twitter" style="color: #1da1f2;"></i></a>
+			<a href= "#" target=
+				"_blank" class="social-icon"><i class="fab fa-instagram"
+												style="color: #e1306c;"></i>
+			</a>
+			<a href="#" target="_blank" class="social-icon">
+				<i class="fab fa-linkedin" style="color: #0077b5;"></i>
+			</a>
+			<a href="#" target="_blank" class="social-icon">
+				<i class="fab fa-youtube" style="color: #c4302b;"></i>
+			</a>
+		</div>
+	</div>
+</body>
+
+</html>
